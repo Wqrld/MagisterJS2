@@ -1,0 +1,58 @@
+{
+  "name": "magisterjs2",
+  "version": "2.0.0-alpha1.1",
+  "description": "A JavaScript implementation of the Magister 6 API",
+  "main": "lib/magister.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "node-fetch": "^1.5.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-plugin-dedent": "^2.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-plugin-transform-strict-mode": "^6.22.0",
+    "babel-plugin-version-inline": "^1.0.0",
+    "babel-preset-env": "^1.1.8",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "chai-stream": "0.0.0",
+    "eslint": "^3.16.1",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "build": "babel -s false -d lib/ src/",
+    "prepublish": "npm run build",
+    "test": "mocha --compilers js:babel-register",
+    "lint": "eslint .",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- --compilers js:babel-core/register"
+  },
+  "engines": {
+    "node": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplyGits/MagisterJS.git"
+  },
+  "author": "simplyApps <hello@simplyApps.nl> (http://simplyGits.github.io/)",
+  "maintainers": [
+    "Lieuwe Rooijakkers <lieuwerooijakkers@gmail.com> (http://www.lieuwe.xyz/)"
+  ],
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/simplyGits/MagisterJS/issues"
+  },
+  "homepage": "http://simplyGits.github.io/MagisterJS",
+  "keywords": [
+    "magister",
+    "schoolmaster",
+    "school",
+    "simplyApps"
+  ],
+  "tonicExampleFilename": "tonicdevExample.js"
+}
