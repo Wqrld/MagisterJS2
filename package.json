@@ -1,6 +1,6 @@
 {
   "name": "magisterjs2",
-  "version": "2.0.0-alpha1.1",
+  "version": "2.0.0-alpha1.2",
   "description": "A JavaScript implementation of the Magister 6 API",
   "main": "lib/magister.js",
   "directories": {
@@ -42,12 +42,13 @@
   "author": "simplyApps <hello@simplyApps.nl> (http://simplyGits.github.io/)",
   "maintainers": [
     "Lieuwe Rooijakkers <lieuwerooijakkers@gmail.com> (http://www.lieuwe.xyz/)"
+    "Luc H <luc@imluc.ga> (https://imluc.ga )"
   ],
   "license": "LGPL-3.0",
   "bugs": {
-    "url": "https://github.com/simplyGits/MagisterJS/issues"
+    "url": "https://github.com/Wqrld/MagisterJS2/issues"
   },
-  "homepage": "http://simplyGits.github.io/MagisterJS",
+  "homepage": "https://github.com/Wqrld/MagisterJS2",
   "keywords": [
     "magister",
     "schoolmaster",

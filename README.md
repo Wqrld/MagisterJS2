@@ -1,4 +1,4 @@
-[<img src="http://i.imgur.com/Lrg80ax.png" alt="Magister.js" align="left" width="200"/>](http://simplyGits.github.io/MagisterJS/)
+[<img src="http://i.imgur.com/Lrg80ax.png" alt="Magister.js" align="left" width="200"/>](https://github.com/Wqrld/MagisterJS2)
 <p align="right">
 	<a href="https://travis-ci.org/simplyGits/MagisterJS">
 		<img src="https://api.travis-ci.org/simplyGits/MagisterJS.png?branch=master" alt="Travis CI Badge"/>
@@ -19,15 +19,14 @@
 
 
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/simplyGits/MagisterJS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![npm version](https://badge.fury.io/js/magister.js.svg)](https://badge.fury.io/js/magister.js)
+[![npm version](https://badge.fury.io/js/magisterjs2.svg)](https://badge.fury.io/js/magisterjs2)
 <a href="https://snyk.io/test/github/simplyGits/MagisterJS"><img src="https://snyk.io/test/github/simplyGits/MagisterJS/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/simplyGits/MagisterJS" style="max-width:100%;"></a>
 
 A JavaScript implementation of the [Magister 6](http://magister6.nl/) API.
 
 Quickstart
 ===
-`npm install magister.js`
+`npm install magisterjs2`
 
 ```javascript
 const { default: magister, getSchools } = require('magister.js');
@@ -50,16 +49,15 @@ getSchools('<schoolname>') // get schools matching '<schoolname>'
 	});
 ```
 
-Useful links
+Useful links (old)
 ===
-* [Project page](http://simplyGits.github.io/MagisterJS/)
+* [Project page](http://simplyGits.github.io/MagisterJS/) 
 * [Documentation](http://simplyGits.github.io/MagisterJS/docs/index.html)
 
 Before creating issues
 ===
 1. Update all your packages with `npm update`
-2. Be sure you haven't made a typo and your code is correct (check the [docs](http://simplyGits.github.io/MagisterJS/docs/index.html))
-3. Don't create issues which occur in a modified version
+2. Be sure you haven't made a typo and your code is correct (check the [docs (old)](http://simplyGits.github.io/MagisterJS/docs/index.html))
 
 Contributing
 ===
