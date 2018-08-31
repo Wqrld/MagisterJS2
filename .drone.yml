@@ -3,4 +3,5 @@ pipeline:
     image: node:8
     commands:
       - npm install
+      - chmod 0777 -R ./node_modules
       - npm test
