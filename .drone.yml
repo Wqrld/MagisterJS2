@@ -1,7 +1,14 @@
 pipeline:
   build:
-    image: node:8
+    image: ${NODE_VERSION}
     commands:
       - npm install
       - chmod 0777 -R ./node_modules
+  test:
+    image: ${NODE_VERSION}
+    commands:
       - npm test
+matrix:
+  NODE_VERSION:
+    - node:8
+    - node
