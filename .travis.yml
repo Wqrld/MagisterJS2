@@ -4,6 +4,7 @@ node_js:
   - "node"
 install:
   - npm install
+  - chmod 777 /home/travis/build -R
 before_script:
   - test/version.sh
 script:
