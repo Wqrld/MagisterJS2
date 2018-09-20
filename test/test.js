@@ -57,7 +57,18 @@ describe('Magister', function() {
 	this.timeout(15000)
 
 	before(function () {
-		return magister(options)
+
+magisterjs.getSchools(options.school.url) // get schools matching '<schoolname>'
+	.then((schools) => schools[0]) // get the first school
+	.then((school) => magister({ // login
+		school,
+		username: options.username,
+		password: options.password,
+	})).then((m) => {return m})
+
+
+
+		//return magister(options)
 		.then(obj => {
 			return options.isParent ?
 				obj.children().then(children => children[0]) :

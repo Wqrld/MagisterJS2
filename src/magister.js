@@ -443,12 +443,17 @@ export default function magister (options) {
 	})
 	const rej = s => Promise.reject(new Error(s))
 
-	if (!(
+	if(!options.sessionId){
+	if(!options.school){return rej('Missing school')}
+    if(!options.username){return rej('Missing username')}
+    if(!options.password){return rej('Missing password')}
+}
+/*	if (!(
 		options.school &&
 		(options.sessionId || (options.username && options.password))
 	)) {
 		return rej('school and username&password or sessionId are required.')
-	}
+	}*/
 
 	if (!_.isObject(options.school)) {
 		return rej('school is not an object')
