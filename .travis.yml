@@ -3,8 +3,8 @@ language: node_js
 node_js:
   - "node"
 install:
-  - npm install
   - chmod 777 /home/travis/build -R
+  - npm install
 before_script:
   - test/version.sh
 script:
